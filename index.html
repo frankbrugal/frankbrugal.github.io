@@ -134,170 +134,130 @@
             font-weight: 600;
         }
        
-        .tabs-container {
+        .download-section {
             background: white;
             border-radius: 20px;
-            padding: 35px;
+            padding: 40px;
             margin-bottom: 30px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
        
-        .tabs-nav {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 30px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-       
-        .tab-btn {
-            padding: 15px 30px;
-            border: none;
-            border-radius: 25px;
-            background: #f1f5f9;
-            color: #475569;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
-       
-        .tab-btn.active {
-            background: #1e40af;
-            color: white;
-            box-shadow: 0 5px 15px rgba(30, 64, 175, 0.3);
-        }
-       
-        .tab-btn:hover {
-            background: #e2e8f0;
-            transform: translateY(-2px);
-        }
-       
-        .tab-btn.active:hover {
-            background: #1e3a8a;
-        }
-       
-        .tab-content {
-            display: none;
-        }
-       
-        .tab-content.active {
-            display: block;
-        }
-       
-        .content-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 25px;
-        }
-       
-        .content-item {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 15px;
-            padding: 25px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-       
-        .content-item:hover {
-            border-color: #3b82f6;
-            background: white;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
-        }
-       
-        .content-item h3 {
+        .download-section h2 {
             color: #1e40af;
-            font-size: 1.25rem;
-            margin-bottom: 12px;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
             font-weight: 700;
         }
        
-        .content-item p {
-            color: #64748b;
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-       
-        .category-badge {
-            background: linear-gradient(135deg, #fbbf24, #f59e0b);
-            color: white;
-            padding: 5px 12px;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin-bottom: 12px;
-            display: inline-block;
-        }
-       
-        .download-btn {
-            background: linear-gradient(135deg, #3b82f6, #1e40af);
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            display: inline-block;
-            transition: all 0.3s ease;
-            margin-right: 10px;
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-        }
-       
-        .download-btn:hover {
-            background: linear-gradient(135deg, #1e40af, #1e3a8a);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
-        }
-       
-        .download-btn.pdf {
-            background: linear-gradient(135deg, #ef4444, #dc2626);
-        }
-       
-        .download-btn.pdf:hover {
-            background: linear-gradient(135deg, #dc2626, #b91c1c);
-        }
-       
-        .upload-instructions {
-            background: linear-gradient(135deg, #dcfce7, #bbf7d0);
-            border: 2px dashed #10b981;
-            border-radius: 20px;
-            padding: 30px;
+        .dropdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
             margin-bottom: 30px;
-            text-align: center;
         }
        
-        .upload-instructions h3 {
-            color: #065f46;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
+        .dropdown {
+            position: relative;
+            min-width: 250px;
         }
        
-        .upload-steps {
+        .dropdown-btn {
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            color: white;
+            border: none;
+            padding: 18px 30px;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(30, 64, 175, 0.3);
+        }
+       
+        .dropdown-btn:hover {
+            background: linear-gradient(135deg, #1e3a8a, #1e40af);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(30, 64, 175, 0.4);
+        }
+       
+        .dropdown-arrow {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+       
+        .dropdown.active .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+       
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
             background: white;
             border-radius: 15px;
-            padding: 25px;
-            margin: 20px 0;
-            text-align: left;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid rgba(0, 0, 0, 0.1);
         }
        
-        .upload-steps h4 {
-            color: #10b981;
-            margin-bottom: 15px;
+        .dropdown.active .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
         }
        
-        .step-list {
-            list-style: none;
-            padding: 0;
+        .dropdown-item {
+            display: block;
+            padding: 15px 20px;
+            color: #374151;
+            text-decoration: none;
+            border-bottom: 1px solid #f3f4f6;
+            transition: all 0.3s ease;
+            font-weight: 500;
         }
        
-        .step-list li {
-            background: #f0fdf4;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 10px;
-            border-left: 4px solid #10b981;
+        .dropdown-item:hover {
+            background: #f8fafc;
+            color: #1e40af;
+            transform: translateX(5px);
+        }
+       
+        .dropdown-item:last-child {
+            border-bottom: none;
+        }
+       
+        .dropdown-item .item-category {
+            font-size: 0.8rem;
+            color: #f59e0b;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 3px;
+        }
+       
+        .dropdown-item .item-title {
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 3px;
+        }
+       
+        .dropdown-item .item-desc {
+            font-size: 0.85rem;
+            color: #64748b;
+            line-height: 1.4;
         }
        
         .donation-section {
@@ -351,11 +311,7 @@
                 font-size: 2.5rem;
             }
            
-            .content-grid {
-                grid-template-columns: 1fr;
-            }
-           
-            .tabs-nav {
+            .dropdown-container {
                 flex-direction: column;
                 align-items: center;
             }
@@ -363,6 +319,11 @@
             .social-links {
                 flex-direction: column;
                 align-items: center;
+            }
+           
+            .dropdown {
+                width: 100%;
+                max-width: 350px;
             }
         }
     </style>
@@ -416,170 +377,132 @@
             </div>
         </section>
 
-        <section class="upload-instructions">
-            <h3>🔧 Sistema Súper Simple para Frank</h3>
-            <p>Agregar nuevo contenido en solo 2 pasos:</p>
+        <section class="download-section">
+            <h2>📚 Biblioteca Digital</h2>
            
-            <div class="upload-steps">
-                <h4>📚 Para Libros:</h4>
-                <ul class="step-list">
-                    <li><strong>PASO 1:</strong> Renombra tu archivo: <code>mi-libro-titulo.pdf</code> (sin espacios)</li>
-                    <li><strong>PASO 2:</strong> Sube a carpeta <code>libros/</code> en GitHub</li>
-                    <li><strong>¡LISTO!</strong> URL automática: <code>frankbrugal.com/libros/mi-libro-titulo.pdf</code></li>
-                </ul>
-               
-                <h4>📄 Para Artículos:</h4>
-                <ul class="step-list">
-                    <li><strong>PASO 1:</strong> Renombra tu archivo: <code>mi-articulo-titulo.pdf</code> (sin espacios)</li>
-                    <li><strong>PASO 2:</strong> Sube a carpeta <code>articulos/</code> en GitHub</li>
-                    <li><strong>¡LISTO!</strong> URL automática: <code>frankbrugal.com/articulos/mi-articulo-titulo.pdf</code></li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="tabs-container">
-            <div class="tabs-nav">
-                <button class="tab-btn active" onclick="showTab('libros')">📚 Bajar Libros</button>
-                <button class="tab-btn" onclick="showTab('articulos')">📄 Bajar Artículos</button>
-            </div>
-
-            <div id="libros" class="tab-content active">
-                <h2 style="color: #1e40af; margin-bottom: 25px;">📚 Libros de Frank Brugal A.</h2>
-                <div class="content-grid">
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Derecho Corporativo</div>
-                        <h3>Derecho Corporativo Avanzado</h3>
-                        <p>Guía completa sobre aspectos legales complejos en la gestión empresarial moderna</p>
-                        <a href="libros/derecho-corporativo-avanzado.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+            <div class="dropdown-container">
+                <div class="dropdown" id="librosDropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown('librosDropdown')">
+                        📚 Libros
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="libros/derecho-corporativo-avanzado.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Derecho Corporativo</span>
+                            <div class="item-title">Derecho Corporativo Avanzado</div>
+                            <div class="item-desc">Guía completa sobre aspectos legales complejos en la gestión empresarial</div>
+                        </a>
+                       
+                        <a href="libros/compliance-empresarial.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Derecho Corporativo</span>
+                            <div class="item-title">Manual de Compliance Empresarial</div>
+                            <div class="item-desc">Cumplimiento normativo para empresas del siglo XXI</div>
+                        </a>
+                       
+                        <a href="libros/ciberseguridad-empresas.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Ciberseguridad</span>
+                            <div class="item-title">Ciberseguridad para Empresas</div>
+                            <div class="item-desc">Protección digital y gestión de riesgos informáticos</div>
+                        </a>
+                       
+                        <a href="libros/proteccion-datos-personales.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Ciberseguridad</span>
+                            <div class="item-title">Protección de Datos Personales</div>
+                            <div class="item-desc">Marco legal y técnico para cumplimiento de normativas</div>
+                        </a>
+                       
+                        <a href="libros/estrategias-ventas-modernas.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Ventas y Mercadeo</span>
+                            <div class="item-title">Estrategias de Ventas Modernas</div>
+                            <div class="item-desc">Técnicas avanzadas de ventas para el entorno actual</div>
+                        </a>
+                       
+                        <a href="libros/mercadeo-digital-efectivo.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Ventas y Mercadeo</span>
+                            <div class="item-title">Mercadeo Digital Efectivo</div>
+                            <div class="item-desc">Guía completa para dominar el marketing digital</div>
+                        </a>
+                       
+                        <a href="libros/liderazgo-ejecutivo.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Autoayuda</span>
+                            <div class="item-title">Liderazgo Ejecutivo</div>
+                            <div class="item-desc">Desarrollo de habilidades directivas empresariales</div>
+                        </a>
+                       
+                        <a href="mi-libro-Dieta-digital-Frank-Brugal-A.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Desarrollo Personal</span>
+                            <div class="item-title">Dieta Digital</div>
+                            <div class="item-desc">Guía para un consumo saludable de información digital</div>
+                        </a>
+                       
+                        <a href="libros/simplicidad-de-dar.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Autoayuda</span>
+                            <div class="item-title">La Simplicidad de Dar</div>
+                            <div class="item-desc">Reflexiones sobre la generosidad y el impacto social</div>
+                        </a>
                     </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Derecho Corporativo</div>
-                        <h3>Manual de Compliance Empresarial</h3>
-                        <p>Cumplimiento normativo para empresas del siglo XXI en República Dominicana</p>
-                        <a href="libros/compliance-empresarial.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Ciberseguridad</div>
-                        <h3>Ciberseguridad para Empresas</h3>
-                        <p>Protección digital y gestión de riesgos informáticos en el entorno corporativo</p>
-                        <a href="libros/ciberseguridad-empresas.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Ciberseguridad</div>
-                        <h3>Protección de Datos Personales</h3>
-                        <p>Marco legal y técnico para el cumplimiento de normativas de privacidad</p>
-                        <a href="libros/proteccion-datos-personales.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Ventas y Mercadeo</div>
-                        <h3>Estrategias de Ventas Modernas</h3>
-                        <p>Técnicas avanzadas de ventas para el entorno empresarial actual</p>
-                        <a href="libros/estrategias-ventas-modernas.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Ventas y Mercadeo</div>
-                        <h3>Mercadeo Digital Efectivo</h3>
-                        <p>Guía completa para dominar el marketing digital en la era moderna</p>
-                        <a href="libros/mercadeo-digital-efectivo.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Autoayuda</div>
-                        <h3>Liderazgo Ejecutivo</h3>
-                        <p>Desarrollo de habilidades directivas en el entorno empresarial actual</p>
-                        <a href="libros/liderazgo-ejecutivo.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Autoayuda</div>
-                        <h3>La Simplicidad de Dar</h3>
-                        <p>Reflexiones sobre la generosidad y el impacto social positivo</p>
-                        <a href="libros/simplicidad-de-dar.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-
                 </div>
-            </div>
 
-            <div id="articulos" class="tab-content">
-                <h2 style="color: #1e40af; margin-bottom: 25px;">📄 Artículos de Frank Brugal A.</h2>
-                <div class="content-grid">
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Análisis Político</div>
-                        <h3>Caos Actual - Nuevo Orden</h3>
-                        <p>Análisis crítico sobre la situación geopolítica contemporánea y sus transformaciones</p>
-                        <a href="articulos/politicos/caos-actual-nuevo-orden.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                <div class="dropdown" id="articulosDropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown('articulosDropdown')">
+                        📄 Artículos
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="mi-articulo-Haiti-Vecinos-Destino.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Análisis Social</span>
+                            <div class="item-title">Haití: Cuando los Vecinos Definen el Destino</div>
+                            <div class="item-desc">Reflexiones sobre las relaciones dominico-haitianas</div>
+                        </a>
+                       
+                        <a href="articulos/caos-actual-nuevo-orden.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Análisis Político</span>
+                            <div class="item-title">Caos Actual - Nuevo Orden</div>
+                            <div class="item-desc">Análisis crítico sobre la situación geopolítica contemporánea</div>
+                        </a>
+                       
+                        <a href="articulos/nuevo-orden-mundial.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Análisis Político</span>
+                            <div class="item-title">El Nuevo Orden Mundial</div>
+                            <div class="item-desc">Análisis de las transformaciones geopolíticas contemporáneas</div>
+                        </a>
+                       
+                        <a href="articulos/justicia-era-desinformacion.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Análisis Político</span>
+                            <div class="item-title">La Justicia en la Era de la Desinformación</div>
+                            <div class="item-desc">Reflexiones sobre el sistema judicial frente a desafíos digitales</div>
+                        </a>
+                       
+                        <a href="articulos/dolar-en-su-visita.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Análisis Económico</span>
+                            <div class="item-title">El Dólar en su Visita</div>
+                            <div class="item-desc">Impacto de políticas monetarias internacionales en RD</div>
+                        </a>
+                       
+                        <a href="articulos/fondo-monetario.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Análisis Económico</span>
+                            <div class="item-title">El Fondo Monetario</div>
+                            <div class="item-desc">Análisis del papel del FMI en economías emergentes</div>
+                        </a>
+                       
+                        <a href="articulos/republica-dominicana-sin-maquillaje.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Análisis Social</span>
+                            <div class="item-title">República Dominicana Sin Maquillaje</div>
+                            <div class="item-desc">Radiografía sincera de la realidad nacional dominicana</div>
+                        </a>
+                       
+                        <a href="articulos/miedo-contemporaneo.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Análisis Social</span>
+                            <div class="item-title">El Miedo Contemporáneo</div>
+                            <div class="item-desc">Análisis psicosocial de los miedos en la sociedad moderna</div>
+                        </a>
+                       
+                        <a href="articulos/resiliencia-funcion-publica.pdf" class="dropdown-item" target="_blank">
+                            <span class="item-category">Desarrollo Personal</span>
+                            <div class="item-title">La Resiliencia en la Función Pública</div>
+                            <div class="item-desc">Estrategias para mantener integridad en servicio público</div>
+                        </a>
                     </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Análisis Político</div>
-                        <h3>El Nuevo Orden Mundial</h3>
-                        <p>Análisis crítico de las transformaciones geopolíticas contemporáneas</p>
-                        <a href="articulos/nuevo-orden-mundial.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Análisis Político</div>
-                        <h3>La Justicia en la Era de la Desinformación</h3>
-                        <p>Reflexiones sobre el sistema judicial frente a los desafíos digitales</p>
-                        <a href="articulos/justicia-era-desinformacion.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Análisis Económico</div>
-                        <h3>El Dólar en su Visita</h3>
-                        <p>Impacto de las políticas monetarias internacionales en República Dominicana</p>
-                        <a href="articulos/dolar-en-su-visita.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Análisis Económico</div>
-                        <h3>El Fondo Monetario</h3>
-                        <p>Análisis del papel del FMI en las economías emergentes</p>
-                        <a href="articulos/fondo-monetario.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Análisis Social</div>
-                        <h3>Haití: Cuando los Vecinos Definen el Destino</h3>
-                        <p>Reflexiones sobre las relaciones dominico-haitianas y su impacto regional</p>
-                        <a href="articulos/haiti-vecino-destino.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Análisis Social</div>
-                        <h3>República Dominicana Sin Maquillaje</h3>
-                        <p>Radiografía sincera de la realidad nacional dominicana</p>
-                        <a href="articulos/republica-dominicana-sin-maquillaje.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Análisis Social</div>
-                        <h3>El Miedo Contemporáneo</h3>
-                        <p>Análisis psicosocial de los miedos en la sociedad moderna</p>
-                        <a href="articulos/miedo-contemporaneo.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Desarrollo Personal</div>
-                        <h3>La Resiliencia en la Función Pública</h3>
-                        <p>Estrategias para mantener la integridad en el servicio público</p>
-                        <a href="articulos/resiliencia-funcion-publica.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-                   
-                    <div class="content-item">
-                        <div class="category-badge">Desarrollo Personal</div>
-                        <h3>Dieta Digital</h3>
-                        <p>Guía para un consumo saludable de información en la era digital</p>
-                        <a href="articulos/dieta-digital.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -623,25 +546,29 @@
     </div>
 
     <script>
-        function showTab(tabName) {
-            // Ocultar todas las pestañas
-            const allTabs = document.querySelectorAll('.tab-content');
-            allTabs.forEach(tab => {
-                tab.classList.remove('active');
+        function toggleDropdown(dropdownId) {
+            const dropdown = document.getElementById(dropdownId);
+            const isActive = dropdown.classList.contains('active');
+           
+            // Cerrar todos los dropdowns
+            document.querySelectorAll('.dropdown').forEach(d => {
+                d.classList.remove('active');
             });
            
-            // Remover clase active de todos los botones
-            const allButtons = document.querySelectorAll('.tab-btn');
-            allButtons.forEach(btn => {
-                btn.classList.remove('active');
-            });
-           
-            // Mostrar la pestaña seleccionada
-            document.getElementById(tabName).classList.add('active');
-           
-            // Activar el botón correspondiente
-            event.target.classList.add('active');
+            // Si no estaba activo, activarlo
+            if (!isActive) {
+                dropdown.classList.add('active');
+            }
         }
+
+        // Cerrar dropdowns al hacer clic fuera
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown').forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
+        });
 
         // Datos estructurados para SEO
         const structuredData = {
@@ -658,47 +585,13 @@
                 "https://twitter.com/frankbrugal7",
                 "https://www.tiktok.com/@frankbrugal7",
                 "https://fbrugalconsultores.com"
-            ],
-            "worksFor": {
-                "@type": "Organization",
-                "name": "F. Brugal Consultores",
-                "url": "https://fbrugalconsultores.com"
-            },
-            "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "DO",
-                "addressRegion": "Santo Domingo",
-                "addressLocality": "Santo Domingo, Puerto Plata"
-            },
-            "knowsAbout": [
-                "Consultoría Empresarial",
-                "Análisis Estratégico",
-                "Ciberseguridad",
-                "Análisis Político",
-                "Desarrollo Empresarial"
-            ],
-            "alumniOf": "Reserva de Dignidad"
+            ]
         };
 
-        // Insertar datos estructurados
         const script = document.createElement('script');
         script.type = 'application/ld+json';
         script.textContent = JSON.stringify(structuredData);
         document.head.appendChild(script);
-
-        // Animaciones suaves al cargar
-        document.addEventListener('DOMContentLoaded', function() {
-            const items = document.querySelectorAll('.content-item');
-            items.forEach((item, index) => {
-                item.style.opacity = '0';
-                item.style.transform = 'translateY(20px)';
-                setTimeout(() => {
-                    item.style.transition = 'all 0.5s ease';
-                    item.style.opacity = '1';
-                    item.style.transform = 'translateY(0)';
-                }, index * 100);
-            });
-        });
     </script>
 </body>
 </html> 
