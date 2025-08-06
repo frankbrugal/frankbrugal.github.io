@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frank Brugal - Biblioteca Digital | Consultor Legal Dominicano</title>
-    <meta name="description" content="Frank Brugal: Biblioteca digital con libros de derecho corporativo, ciberseguridad, autosuperación y 40+ artículos profesionales. Consultor legal dominicano especializado.">
-    <meta name="keywords" content="Frank Brugal, consultor legal dominicano, derecho corporativo, ciberseguridad, libros PDF, artículos legales, Santo Domingo, República Dominicana">
-    <meta name="author" content="Frank Brugal">
+    <title>Frank Brugal A. - Biblioteca Digital | Consultor Legal Dominicano</title>
+    <meta name="description" content="Frank Brugal A.: Biblioteca digital con libros y artículos especializados. 38+ años de experiencia en derecho corporativo, ciberseguridad, ventas, mercadeo y análisis político-social.">
+    <meta name="keywords" content="Frank Brugal A., consultor legal dominicano, derecho corporativo, ciberseguridad, ventas, mercadeo, análisis político, Santo Domingo, Puerto Plata, Reserva de Dignidad">
+    <meta name="author" content="Frank Brugal A.">
     <link rel="canonical" href="https://frankbrugal.com">
     <style>
         * {
@@ -63,37 +63,45 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            margin-top: 30px;
-            flex-wrap: wrap;
-        }
+            margin-top:30px;         .social-links a {        }
+            flex-wrap: envolver;
+
        
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            padding: 12px 24px;
-            border-radius: 25px;
-            background: #3b82f6;
-            transition: all 0.3s ease;
+
+            color: blanco;
+            decoración de texto: ninguna;
+            peso de fuente: 600;
+            relleno: 12px 24px;
+            radio del borde: 25px;
+            fondo: #3b82f6;
+            transición: todo 0.3s facilidad;
         }
        
         .social-links a:hover {
-            background: #1e3a8a;
-            transform: translateY(-2px);
+            fondo: #1e3a8a;
+            transformar: translateY(-2px);
+        }
+       
+        .social-links a.whatsapp {
+            fondo: #25d366;
+        }
+       
+        .social-links a.whatsapp:hover {
+            fondo: #128c7e;
         }
        
         .stats-section {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 30px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            fondo: blanco;
+            radio del borde: 20px;
+            relleno: 40px;
+            margen inferior: 30px;
+            alineación del texto: centro;
+            sombra del cuadro: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
        
         .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            mostrar: cuadrícula;
+            cuadrícula-plantilla-columnas: repeat(auto-fit, minmax(200px, 1fr));
             gap: 30px;
             margin-top: 20px;
         }
@@ -116,7 +124,7 @@
        
         .content-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            cuadrícula-plantilla-columnas: 1fr 1fr;
             gap: 30px;
             margin-bottom: 30px;
         }
@@ -130,118 +138,193 @@
        
         .section h2 {
             color: #1e3a8a;
-            font-size: 2rem;
-            margin-bottom: 25px;
-            font-weight: 700;
-            border-bottom: 3px solid #f59e0b;
-            padding-bottom: 15px;
+            tamaño de fuente: 2rem;
+            margen inferior: 25px;
+            peso de fuente: 700;
+            borde inferior: 3px sólido #f59e0b;
+            relleno inferior: 15px;
+        }
+       
+        .category-group { margen inferior
+            : 30px;
+        }
+       
+        .category-title {
+            color: #1e3a8a;
+            tamaño de fuente: 1.1rem;
+            peso de fuente: 700;
+            margen inferior: 15px;
+            relleno: 8px 15px;
+            fondo: #e0f2fe;
+            radio del borde: 10px;
+            borde izquierdo: 4px sólido #3b82f6;
         }
        
         .content-item {
-            background: #f9fafb;
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 20px;
-            transition: all 0.3s ease;
+            fondo: #f9fafb;
+            borde: 1px sólido #e5e7eb;
+            radio del borde: 12px;
+            relleno: 20px;
+            margen inferior: 15px;
+            transición: todo 0.3s facilidad;
         }
        
         .content-item:hover {
-            border-color: #3b82f6;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
+            color del borde: #3b82f6;
+            transformar: translateY(-2px);
+            sombra del cuadro: 0 8px 20px rgba(59, 130, 246, 0.15);
         }
        
         .content-item h3 {
             color: #1e3a8a;
-            font-size: 1.25rem;
-            margin-bottom: 12px;
-            font-weight: 700;
+            tamaño de fuente: 1.15rem;
+            margen inferior: 10px;
+            peso de fuente: 700;
         }
        
         .content-item p {
             color: #6b7280;
-            margin-bottom: 15px;
-        }
-       
-        .item-category {
-            background: #f59e0b;
-            color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            display: inline-block;
+            margen inferior: 15px;
+            tamaño de fuente: 0.9rem;
         }
        
         .download-btn {
-            background: #3b82f6;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            font-weight: 600;
-            margin-right: 10px;
-            display: inline-block;
-            transition: all 0.3s ease;
+            fondo: #3b82f6;
+            color: blanco;
+            decoración de texto: ninguna;
+            relleno: 8px 16px;
+            radio del borde: 20px;
+            tamaño de fuente: 0.8rem;
+            peso de fuente: 600;
+            margen derecho: 8px;
+            visualización: bloque en línea;
+            transición: toda 0.3s facilidad;
         }
        
         .download-btn:hover {
-            background: #1e3a8a;
-            transform: translateY(-2px);
+            fondo: #1e3a8a;
+            transformación: translateY(-1px);
         }
        
         .download-btn.pdf {
-            background: #dc2626;
+            fondo: #dc2626;
         }
        
         .download-btn.pdf:hover {
-            background: #b91c1c;
+            fondo: #b91c1c;
         }
        
         .admin-section {
-            background: #fef3c7;
-            border: 2px dashed #f59e0b;
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 30px;
+            fondo: #fef3c7;
+            borde: 2px discontinuo #f59e0b;
+            radio del borde: 20px;
+            relleno: 30px;
+            margen inferior: 30px;
+            alineación del texto: centro;
+        }
+       
+        .admin-section h3 {
+            color: #92400e;
+            margen inferior: 15px;
+        }
+       
+        .admin-section p {
+            color: #92400e;
+            peso de fuente: 500;
+        }
+       
+        .contenido adicional {
+            fondo: blanco;
+            radio del borde: 20px;
+            relleno: 35px;
+            margen inferior: 30px;
+            sombra del cuadro: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+       
+        .contenido adicional h3 {
+            color: #1e3a8a;
+            tamaño de fuente: 1.5rem;
+            margen inferior: 20px;
+            peso de fuente: 700;
+        } .
+       
+        lista de temas {
+            visualización: cuadrícula;
+            columnas de plantilla de cuadrícula: repetir (ajuste automático, minmax (250px, 1fr));
+            espacio: 15px;
+        }
+       
+        . elemento de tema {
+            fondo: #f0f9ff;
+            relleno: 15px;
+            radio del borde: 10px;
+            borde izquierdo: 4px sólido #3b82f6;
+            color: #1e3a8a;
+            peso de fuente: 500;
+        }
+       
+        . sección de donación {
+            fondo: degradado lineal (135deg, #ecfdf5, #f0fdf4);
+            borde: 2px sólido #10b981;
+            radio del borde: 20px;
+            relleno: 30px;
+            margen inferior: 30px;
             text-align: center;
         }
        
-        .code-block {
-            background: #1f2937;
-            color: #f9fafb;
-            padding: 20px;
-            border-radius: 10px;
-            font-family: 'Courier New', monospace;
-            font-size: 0.875rem;
-            text-align: left;
-            margin: 15px 0;
-            overflow-x: auto;
+        .donation-section h3 {
+            color: #065f46;
+            margin-bottom: 15px;
+        }
+       
+        .paypal-btn {
+            background: #0070ba;
+            color: blanco;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+       
+        .paypal-btn:hover {
+            background: #005a9c;
+            transform: translateY(-2px);
         }
        
         footer {
-            background: white;
+            background: blanco;
             border-radius: 20px;
             padding: 35px;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
        
-        @media (max-width: 768px) {
+        .contact-grid {
+            display: grid;
+            columnas-plantilla-cuadrícula: repeat(auto-ajuste, minmax(250px, 1fr));
+            espacio: 25px;
+            margen: 25px 0;
+        }
+       
+        @media (ancho máximo: 768px) {
             .content-grid {
-                grid-template-columns: 1fr;
+                columnas-plantilla-cuadrícula: 1fr;
             }
            
             h1 {
-                font-size: 2.5rem;
+                tamaño-fuente: 2.5rem;
             }
            
             .social-links {
-                flex-direction: column;
-                align-items: center;
+                dirección-flexible: columna;
+                alinear-elementos: centro;
+            }
+           
+            .topic-list {
+                columnas-plantilla-cuadrícula: 1fr;
             }
         }
     </style>
@@ -249,14 +332,14 @@
 <body>
     <div class="container">
         <header>
-            <h1>Frank Brugal</h1>
-            <p class="subtitle">Consultor Legal Dominicano | Especialista en Derecho Corporativo</p>
+            <h1>Frank Brugal A.</h1>
+            <p class="subtitle">Consultor Legal Dominicano | Especialista en Derecho Corporativo | Reserva de Dignidad</p>
            
             <div class="credentials">
-                <p><strong>📍 Ubicación:</strong> Santo Domingo, República Dominicana</p>
-                <p><strong>🎯 Especialidades:</strong> Derecho Corporativo • Ciberseguridad • Consultoría Empresarial</p>
+                <p><strong>📍 Ubicación:</strong> Santo Domingo y Puerto Plata, República Dominicana</p>
+                <p><strong>🎯 Especialidades:</strong> Derecho Corporativo • Ciberseguridad • Ventas y Mercadeo • Análisis Político-Social</p>
                 <p><strong>📚 Biblioteca:</strong> 12+ Libros Especializados • 40+ Artículos Profesionales</p>
-                <p><strong>💚 Compromiso Social:</strong> 60% de donaciones al Patronato de Ciegos de RD</p>
+                <p><strong>⭐ Experiencia:</strong> 38+ Años en Consultoría Legal y Empresarial</p>
             </div>
            
             <div class="social-links">
@@ -264,26 +347,27 @@
                 <a href="https://www.facebook.com/frankbrugal" target="_blank">📘 Facebook</a>
                 <a href="https://twitter.com/frankbrugal7" target="_blank">🐦 Twitter</a>
                 <a href="https://www.tiktok.com/@frankbrugal7" target="_blank">🎵 TikTok</a>
+                <a href="https://wa.me/18293424652" target="_blank" class="whatsapp">📱 WhatsApp</a>
                 <a href="https://fbrugalconsultores.com" target="_blank">🌐 Web Oficial</a>
             </div>
         </header>
 
         <section class="stats-section">
-            <h2>📊 Estadísticas de la Biblioteca</h2>
+            <h2>📊 Estadísticas de la Biblioteca Frank Brugal A.</h2>                 <div class="stat-item">                </div>                    <div class="stat-label">Años de experiencia</div>                    <div class="stat-number">38+</div>                <div class="stat-item">                </div>                    <div class="stat-label">Artículos profesionales</div>                    <div class="stat-number">40+</div>                <div class="stat-item">                </div>                    <div class="stat-label">Libros especializados</div>                    <div class="stat-number">12+</div>                <div class="stat-item">
             <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">12</div>
-                    <div class="stat-label">Libros Especializados</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">40</div>
-                    <div class="stat-label">Artículos Profesionales</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">5+</div>
-                    <div class="stat-label">Años de Experiencia</div>
-                </div>
-                <div class="stat-item">
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <div class="stat-number">100%</div>
                     <div class="stat-label">Contenido Gratuito</div>
                 </div>
@@ -291,125 +375,211 @@
         </section>
 
         <section class="admin-section">
-            <h2>🔧 Sistema Fácil para Frank</h2>
-            <p>Para agregar nuevo contenido, solo edita este archivo HTML:</p>
-           
-            <div class="code-block">
-// 👇 PEGAR AQUÍ NUEVO LIBRO 👇
-&lt;div class="content-item"&gt;
-    &lt;span class="item-category"&gt;derecho&lt;/span&gt;
-    &lt;h3&gt;Título del Libro&lt;/h3&gt;
-    &lt;p&gt;Descripción del libro&lt;/p&gt;
-    &lt;a href="libros/categoria/archivo.pdf" class="download-btn pdf"&gt;📄 Descargar PDF&lt;/a&gt;
-&lt;/div&gt;
-// ☝️ PEGAR AQUÍ NUEVO LIBRO ☝️
-            </div>
+            <h3>🔐 Área de Administración - Solo Frank Brugal A.</h3>
+            <p>Sistema seguro para agregar nuevo contenido. Solo el autor tiene acceso de edición.</p>
         </section>
 
         <div class="content-grid">
             <section class="section">
-                <h2>📚 Libros de Frank Brugal</h2>
+                <h2>📚 Libros de Frank Brugal A.</h2>
                
-                <div class="content-item">
-                    <span class="item-category">derecho</span>
-                    <h3>Derecho Corporativo Avanzado</h3>
-                    <p>Guía completa sobre aspectos legales complejos en la gestión empresarial moderna</p>
-                    <a href="libros/derecho/derecho-corporativo-avanzado.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    <a href="#" class="download-btn">🔗 Compartir</a>
+                <div class="category-group">
+                    <div class="category-title">Derecho Corporativo</div>
+                   
+                    <div class="content-item">
+                        <h3>Derecho Corporativo Avanzado</h3>
+                        <p>Guía completa sobre aspectos legales complejos en la gestión empresarial moderna</p>
+                        <a href="libros/derecho/derecho-corporativo-avanzado.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
+                   
+                    <div class="content-item">
+                        <h3>Manual de Compliance Empresarial</h3>
+                        <p>Cumplimiento normativo para empresas del siglo XXI en República Dominicana</p>
+                        <a href="libros/derecho/compliance-empresarial.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
                 </div>
                
-                <div class="content-item">
-                    <span class="item-category">derecho</span>
-                    <h3>Manual de Compliance Empresarial</h3>
-                    <p>Cumplimiento normativo para empresas del siglo XXI en República Dominicana</p>
-                    <a href="libros/derecho/compliance-empresarial.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    <a href="#" class="download-btn">🔗 Compartir</a>
+                <div class="category-group">
+                    <div class="category-title">Ciberseguridad</div>
+                   
+                    <div class="content-item">
+                        <h3>Ciberseguridad para Empresas</h3>
+                        <p>Protección digital y gestión de riesgos informáticos en el entorno corporativo</p>
+                        <a href="libros/ciberseguridad/ciberseguridad-empresas.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
+                   
+                    <div class="content-item">
+                        <h3>Protección de Datos Personales</h3>
+                        <p>Marco legal y técnico para el cumplimiento de normativas de privacidad</p>
+                        <a href="libros/ciberseguridad/proteccion-datos-personales.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
                 </div>
-               
-                <div class="content-item">
-                    <span class="item-category">ciberseguridad</span>
-                    <h3>Ciberseguridad para Empresas</h3>
-                    <p>Protección digital y gestión de riesgos informáticos en el entorno corporativo</p>
-                    <a href="libros/ciberseguridad/ciberseguridad-empresas.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    <a href="#" class="download-btn">🔗 Compartir</a>
+
+                <div class="category-group">
+                    <div class="category-title">Ventas y Mercadeo</div>
+                   
+                    <div class="content-item">
+                        <h3>Estrategias de Ventas Modernas</h3>
+                        <p>Técnicas avanzadas de ventas para el entorno empresarial actual</p>
+                        <a href="libros/ventas/estrategias-ventas-modernas.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
+                   
+                    <div class="content-item">
+                        <h3>Mercadeo Digital Efectivo</h3>
+                        <p>Guía completa para dominar el marketing digital en la era moderna</p>
+                        <a href="libros/mercadeo/mercadeo-digital-efectivo.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
                 </div>
-               
-                <div class="content-item">
-                    <span class="item-category">empresarial</span>
-                    <h3>Estrategias de Negocio Modernas</h3>
-                    <p>Metodologías probadas para el crecimiento empresarial sostenible</p>
-                    <a href="libros/empresarial/estrategias-negocio.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    <a href="#" class="download-btn">🔗 Compartir</a>
+
+                <div class="category-group">
+                    <div class="category-title">Autoayuda y Desarrollo</div>
+                   
+                    <div class="content-item">
+                        <h3>Liderazgo Ejecutivo</h3>
+                        <p>Desarrollo de habilidades directivas en el entorno empresarial actual</p>
+                        <a href="libros/autoayuda/liderazgo-ejecutivo.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
+                   
+                    <div class="content-item">
+                        <h3>La Simplicidad de Dar</h3>
+                        <p>Reflexiones sobre la generosidad y el impacto social positivo</p>
+                        <a href="libros/autoayuda/simplicidad-de-dar.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
                 </div>
 
                 <!-- 👇 PEGAR AQUÍ NUEVO LIBRO 👇 -->
-
                 <!-- ☝️ PEGAR AQUÍ NUEVO LIBRO ☝️ -->
             </section>
 
             <section class="section">
-                <h2>📄 Artículos de Frank Brugal</h2>
+                <h2>📄 Artículos de Frank Brugal A.</h2>
                
-                <div class="content-item">
-                    <span class="item-category">legal</span>
-                    <h3>Tendencias en Consultoría Legal 2024</h3>
-                    <p>Análisis de las nuevas corrientes en asesoría jurídica empresarial</p>
-                    <a href="articulos/legal/tendencias-consultoria-2024.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    <a href="#" class="download-btn">🔗 Compartir</a>
+                <div class="category-group">
+                    <div class="category-title">Análisis Político</div>
+                   
+                    <div class="content-item">
+                        <h3>El Nuevo Orden Mundial</h3>
+                        <p>Análisis crítico de las transformaciones geopolíticas contemporáneas</p>
+                        <a href="articulos/politicos/nuevo-orden-mundial.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
+                   
+                    <div class="content-item">
+                        <h3>La Justicia en la Era de la Desinformación</h3>
+                        <p>Reflexiones sobre el sistema judicial frente a los desafíos digitales</p>
+                        <a href="articulos/politicos/justicia-era-desinformacion.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
                 </div>
-               
-                <div class="content-item">
-                    <span class="item-category">empresarial</span>
-                    <h3>Transformación Digital Empresarial</h3>
-                    <p>Cómo adaptar tu empresa al mundo digital de manera eficiente</p>
-                    <a href="articulos/empresarial/transformacion-digital.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    <a href="#" class="download-btn">🔗 Compartir</a>
+
+                <div class="category-group">
+                    <div class="category-title">Análisis Económico</div>
+                   
+                    <div class="content-item">
+                        <h3>El Dólar en su Visita</h3>
+                        <p>Impacto de las políticas monetarias internacionales en República Dominicana</p>
+                        <a href="articulos/economicos/dolar-en-su-visita.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
+                   
+                    <div class="content-item">
+                        <h3>El Fondo Monetario</h3>
+                        <p>Análisis del papel del FMI en las economías emergentes</p>
+                        <a href="articulos/economicos/fondo-monetario.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
                 </div>
-               
-                <div class="content-item">
-                    <span class="item-category">autosuperacion</span>
-                    <h3>Mindset de Éxito Profesional</h3>
-                    <p>Desarrollo de mentalidad ganadora para alcanzar objetivos profesionales</p>
-                    <a href="articulos/autosuperacion/mindset-exito.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    <a href="#" class="download-btn">🔗 Compartir</a>
+
+                <div class="category-group">
+                    <div class="category-title">Análisis Social</div>
+                   
+                    <div class="content-item">
+                        <h3>Haití: Cuando los Vecinos Definen el Destino</h3>
+                        <p>Reflexiones sobre las relaciones dominico-haitianas y su impacto regional</p>
+                        <a href="articulos/sociales/haiti-vecino-destino.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
+                   
+                    <div class="content-item">
+                        <h3>República Dominicana Sin Maquillaje</h3>
+                        <p>Radiografía sincera de la realidad nacional dominicana</p>
+                        <a href="articulos/sociales/republica-dominicana-sin-maquillaje.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
+
+                    <div class="content-item">
+                        <h3>El Miedo Contemporáneo</h3>
+                        <p>Análisis psicosocial de los miedos en la sociedad moderna</p>
+                        <a href="articulos/sociales/miedo-contemporaneo.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
                 </div>
-               
-                <div class="content-item">
-                    <span class="item-category">academico</span>
-                    <h3>Contratos Inteligentes y Blockchain</h3>
-                    <p>El futuro de los acuerdos comerciales en la era digital</p>
-                    <a href="articulos/academico/contratos-blockchain.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    <a href="#" class="download-btn">🔗 Compartir</a>
-                </div>
-               
-                <div class="content-item">
-                    <span class="item-category">legal</span>
-                    <h3>Gestión de Riesgos Legales</h3>
-                    <p>Estrategias para minimizar la exposición legal empresarial</p>
-                    <a href="articulos/legal/gestion-riesgos.pdf" class="download-btn pdf">📄 Descargar PDF</a>
-                    <a href="#" class="download-btn">🔗 Compartir</a>
+
+                <div class="category-group">
+                    <div class="category-title">Desarrollo Personal</div>
+                   
+                    <div class="content-item">
+                        <h3>La Resiliencia en la Función Pública</h3>
+                        <p>Estrategias para mantener la integridad en el servicio público</p>
+                        <a href="articulos/desarrollo/resiliencia-funcion-publica.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
+                   
+                    <div class="content-item">
+                        <h3>Dieta Digital</h3>
+                        <p>Guía para un consumo saludable de información en la era digital</p>
+                        <a href="articulos/desarrollo/dieta-digital.pdf" class="download-btn pdf">📄 Descargar PDF</a>
+                    </div>
                 </div>
 
                 <!-- 👇 PEGAR AQUÍ NUEVO ARTÍCULO 👇 -->
-
                 <!-- ☝️ PEGAR AQUÍ NUEVO ARTÍCULO ☝️ -->
             </section>
         </div>
 
-        <footer>
-            <h3>📞 Contacto Frank Brugal</h3>
-            <p>Consultor Legal Dominicano - Especialista en Derecho Corporativo</p>
-            <div style="margin-top: 20px;">
-                <p><strong>📧 Email:</strong> contacto@fbrugalconsultores.com</p>
-                <p><strong>🌐 Web:</strong> <a href="https://fbrugalconsultores.com">fbrugalconsultores.com</a></p>
-                <p><strong>📍 Ubicación:</strong> Santo Domingo, República Dominicana</p>
+        <section class="additional-content">
+            <h3>🔍 Otros Contenidos Especializados</h3>
+            <p style="margin-bottom: 20px; color: #6b7280;">Existen otras secciones especializadas que incluyen:</p>
+           
+            <div class="topic-list">
+                <div class="topic-item">Estrategias de Negocio Modernas</div>
+                <div class="topic-item">Contratos Inteligentes y Blockchain</div>
+                <div class="topic-item">Gestión de Riesgos Laborales</div>
+                <div class="topic-item">Transformación Digital Empresarial</div>
+                <div class="topic-item">Compliance Internacional</div>
+                <div class="topic-item">Análisis Geopolítico Regional</div>
+                <div class="topic-item">Psicología Empresarial</div>
+                <div class="topic-item">Ética en los Negocios</div>
             </div>
-            <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
-                <p style="color: #6b7280; font-size: 0.875rem;">
-                    © 2024 Frank Brugal. Todos los derechos reservados.
-                </p>
-            </div>
-        </footer>
-    </div>
-</body>
-</html> 
+        </section>
+
+        <section class="donation-section">
+            <h3>💚 Compromiso Social - Patronato de Ciegos de República Dominicana</h3>
+            <p>60% de las donaciones voluntarias van destinadas al <strong>Patronato de Ciegos de República Dominicana</strong>.</p>
+            <p>Tu contribución ayuda a hacer una diferencia real en nuestra comunidad.</p>
+<a href="mailto: frankbrugal@ codetel.net.do ?subject= Donación Patronato de Ciegos" class="paypal-btn">            Donación vía PayPal</a>         </section>         <footer>             <h3> Comuníquese con Frank Brugal A.</h3>             <p>Consultor legal dominicano - Más de 38 años de experiencia - Reserva de dignidad</p>             <div class="contact-grid">                 <div>                     <h4> Correo electrónico Profesional</h4>                     <p> <a href="mailto: fbrugaljrubinstei n@gmail.com "> fbrugaljrubinstei n@gmail.com </a></p>                 </div>                 <div>                     <h4> WhatsApp</h4>                     <p> <a href=" https://wa.me/ 18293424652 "> +1 (829) 342-4652</a></p>                 </div>                 <div>                     <h4> Sitio Web Oficial</h4>                     <p> <a href=" https:// fbrugalconsultores.com "> fbrugalconsultores.com </a></p>                 </div>                 <div>                     <h4> Donaciones por PayPal</h4>                     <p> <a href="mailto: frankbrugal@codetel.net.do "> frankbrugal@codetel.net.do </a></p>                 </div>             </div>             <div style="margin-top: 25px; border-top: 1px solid #e5e7eb;" > ©                 2024                     Frank Brugal A. Todas las áreas reservadas. | Reserva de la Dignidad                 </p>             </div>         </footer>     </div> </body> </html> 💳
+
+
+
+📞
+
+           
+
+
+📧
+
+
+
+📱
+
+
+
+🌐
+
+
+
+💳
+
+
+
+           
+
+
+
+
+
+
+
+
